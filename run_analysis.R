@@ -76,6 +76,6 @@ MergedData.mean <- dcast(MergedData.melted, subject + activity ~ variable, mean)
 
 
 ##############################################################################
-#creating the final data into tidy.txt
+#creating the final data into tidyData.txt
 ##############################################################################
-write.table(MergedData.mean, "tidy.txt", row.names = FALSE, quote = FALSE)
+write.table(MergedData.mean, "tidyData.txt", row.names = FALSE, quote = FALSE)
